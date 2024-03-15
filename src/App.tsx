@@ -10,7 +10,7 @@ function App() {
   };
   return (
     <div>
-      <Alert>Hello</Alert>
+      <Alert>GoodBye</Alert>
       <ListGroup
         items={items}
         heading="Cities"

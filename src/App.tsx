@@ -1,24 +1,22 @@
-//Make sure to save all to see web updates
-
 import Alert from "./components/Alert";
 import ListGroup from "./components/ListGroup";
+import Navbar from "./components/Navbar"; // Import the Navbar component
 
 function App() {
-  let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
+  let items = ["Project 1", "Project 2", "Projec 3", "Project 4", "Project 5"];
   const handleSelectItem = (item: string) => {
     console.log(item);
   };
   return (
     <div>
-      <Alert>GoodBye</Alert>
+      <Navbar /> {/* Add the Navbar component here */}
       <ListGroup
         items={items}
-        heading="Places"
+        heading="Work in progress: "
         onSelectItem={handleSelectItem}
       />
     </div>
   );
 }
 
-//So it can be used somewhere else
 export default App;

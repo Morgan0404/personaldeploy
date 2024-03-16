@@ -13,7 +13,7 @@ function App() {
       <Alert>GoodBye</Alert>
       <ListGroup
         items={items}
-        heading="Cities"
+        heading="Places"
         onSelectItem={handleSelectItem}
       />
     </div>

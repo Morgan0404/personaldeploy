@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ListGroup from "./components/ListGroup";
 import About from "./components/About"; // Import the About component
+import ContactDetails from "./components/ContactDetails";
 
 function App() {
   let items = ["Project 1", "Project 2", "Project 3", "Project 4", "Project 5"];
@@ -17,11 +18,15 @@ function App() {
         <Route
           path="/"
           element={
-            <ListGroup
-              items={items}
-              heading="Work in progress: "
-              onSelectItem={handleSelectItem}
-            />
+            <>
+              <ContactDetails />
+
+              <ListGroup
+                items={items}
+                heading="Work in progress: "
+                onSelectItem={handleSelectItem}
+              />
+            </>
           }
         />
         <Route path="/about" element={<About />} />

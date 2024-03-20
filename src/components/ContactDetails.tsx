@@ -54,7 +54,7 @@ function ContactDetails() {
           margin: "10px 0",
         }}
       >
-        Email Me
+        Get In touch
       </a>
     </div>
   );

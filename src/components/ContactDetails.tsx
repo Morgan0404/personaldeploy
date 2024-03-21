@@ -1,9 +1,11 @@
+import DownloadCVButton from "./DownloadCVButton";
+
 function ContactDetails() {
   return (
     <div
       style={{
         padding: "10px",
-        backgroundColor: "#f0f0f0",
+        backgroundColor: "#a8a5a5",
         marginBottom: "20px",
       }}
     >
@@ -13,7 +15,7 @@ function ContactDetails() {
         rel="noopener noreferrer"
         style={{
           display: "inline-block",
-          backgroundColor: "black",
+          backgroundColor: "White",
           color: "white",
           padding: "10px 15px",
           textDecoration: "none",
@@ -22,7 +24,15 @@ function ContactDetails() {
           marginRight: "10px",
         }}
       >
-        Visit My GitHub
+        {/* Image instead of text */}
+        <img
+          src="/githublogo.png" // Assuming the image is in the public folder
+          alt="Visit My GitHub"
+          style={{
+            height: "25px", // Adjust based on your needs
+            width: "auto",
+          }}
+        />
       </a>
       <a
         href="https://www.linkedin.com/in/morgan-james-09092b295/"
@@ -30,7 +40,7 @@ function ContactDetails() {
         rel="noopener noreferrer"
         style={{
           display: "inline-block",
-          backgroundColor: "black",
+          backgroundColor: "White",
           color: "white",
           padding: "10px 15px",
           textDecoration: "none",
@@ -39,13 +49,21 @@ function ContactDetails() {
           marginRight: "10px",
         }}
       >
-        Visit My LinkedIn
+        {/* Image instead of text */}
+        <img
+          src="/linkedin.png" // Assuming the image is in the public folder
+          alt="Visit My GitHub"
+          style={{
+            height: "25px", // Adjust based on your needs
+            width: "auto",
+          }}
+        />
       </a>
       <a
         href="mailto:morganjames202004@gmail.com?subject=Portfolio Enquiry"
         style={{
           display: "inline-block",
-          backgroundColor: "black",
+          backgroundColor: "white",
           color: "white",
           padding: "10px 15px",
           textDecoration: "none",
@@ -54,8 +72,18 @@ function ContactDetails() {
           margin: "10px 0",
         }}
       >
-        Get In touch
+        {/* Image instead of text */}
+        <img
+          src="/contact.png" // Assuming the image is in the public folder
+          alt="Visit My GitHub"
+          style={{
+            height: "25px", // Adjust based on your needs
+            width: "auto",
+          }}
+        />
       </a>
+
+      <DownloadCVButton />
     </div>
   );
 }

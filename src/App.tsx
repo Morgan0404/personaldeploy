@@ -1,4 +1,6 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ListGroup from "./components/ListGroup";
@@ -22,13 +24,8 @@ function App() {
           path="/"
           element={
             <>
-              <ContactDetails />
               <Introduction />
-              <ListGroup
-                items={items}
-                heading="Work in progress: "
-                onSelectItem={handleSelectItem}
-              />
+              <ContactDetails />
             </>
           }
         />

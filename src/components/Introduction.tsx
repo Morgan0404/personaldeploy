@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./Introduction.css";
 const Introduction = () => {
   return (
     <div className="introduction">
-      <h1>Welcome to My Portfolio</h1>
+      <h1>Welcome! </h1>
       <p>
         Hello! I'm Morgan James, an aspiring software developer at Exeter
         University with a passion for tackling sustainability challenges and

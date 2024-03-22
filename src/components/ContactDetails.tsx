@@ -4,9 +4,9 @@ function ContactDetails() {
   return (
     <div
       style={{
-        padding: "10px",
-        backgroundColor: "#a8a5a5",
-        marginBottom: "20px",
+        marginTop: "0px",
+        padding: "0px",
+        marginBottom: "0px",
       }}
     >
       <a

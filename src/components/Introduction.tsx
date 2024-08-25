@@ -2,8 +2,14 @@ import React from "react";
 
 const Introduction = () => {
     return (
-        <div className="bg-gray-100 text-gray-800 min-h-screen flex flex-col items-center justify-center p-6">
+
+
+
+        <div className=" min-h-screen flex flex-col items-center justify-center p-6">
+
+
             <div className="bg-white shadow-md rounded-lg p-8 max-w-3xl w-full">
+
                 <h1 className="text-3xl font-bold text-center text-teal-500 mb-6">
                     Work In Progress!
                 </h1>
@@ -13,7 +19,7 @@ const Introduction = () => {
                         href="https://gradgig.co.uk"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-teal-600 hover:underline"
+                        className="inline-block transition ease-in-out delay-150 bg-teal-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 text-white font-bold py-2 px-4 rounded"
                     >
                         gradgig.co.uk
                     </a>
